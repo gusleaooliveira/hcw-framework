@@ -1,0 +1,12 @@
+@import 'standard.sass';
+
+$highway-red: #A6001A; 
+$highway-green: #004D33; 
+$highway-blue: #00477E; 
+$highway-yellow: #FFAB00;
+
+// Highway colors
+$colors-highway: ( 'highway-red': $highway-red, 'highway-green': $highway-green, 'highway-blue': $highway-blue, 'highway-yellow': $highway-yellow );
+
+@include imprimir-fundo($colors-highway, $branco);
+@include imprimir-texto-borda($colors-highway);

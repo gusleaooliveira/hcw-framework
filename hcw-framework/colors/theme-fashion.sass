@@ -1,0 +1,19 @@
+@import 'standard.sass';
+
+$fashion-flame: #F2552C; 
+$fashion-greenery: #92B558; 
+$fashion-marina: #4F84C4;  
+$fashion-neutral-gray: #898E8C; 
+$fashion-shaded-spruce: #005960; 
+$fashion-navy-peony: #223A5E; 
+$fashion-tawny-port: #672E3B;
+$fashion-primrose-yellow: #F6D155;
+
+// Fashion colors
+$fashion-background-colors-white: ('fashion-flame': $fashion-flame, 'fashion-greenery': $fashion-greenery, 'fashion-marina': $fashion-marina,  'fashion-neutral-gray': $fashion-neutral-gray, 'fashion-shaded-spruce': $fashion-shaded-spruce, 'fashion-navy-peony': $fashion-navy-peony, 'fashion-tawny-port': $fashion-tawny-port);
+$fashion-background-colors-black: ('fashion-primrose-yellow': $fashion-primrose-yellow);
+$colors-fashion: map-merge($fashion-background-colors-white, $fashion-background-colors-black);
+
+@include imprimir-fundo($fashion-background-colors-black);
+@include imprimir-fundo($fashion-background-colors-white, $branco);
+@include imprimir-texto-borda($colors-fashion); 
